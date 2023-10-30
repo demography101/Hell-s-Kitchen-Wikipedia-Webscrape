@@ -51,7 +51,7 @@ for y in Season:
         temp_df1 = pd.DataFrame({'Season':[y for i in range(len(contestants))]})
         temp_df2 = pd.concat([temp_df1, contestants], axis = 1)
         df = pd.concat([df, temp_df2], axis = 0)
-        print(f"Finished scraping for America's Next Top Model Season {y}")
+        print(f"Finished scraping for Hell's Kitchen Season {y}")
         lag = np.random.uniform(5,10) # every 5 to 10 seconds
         time.sleep(lag) 
 print(f'Task Completed.')
